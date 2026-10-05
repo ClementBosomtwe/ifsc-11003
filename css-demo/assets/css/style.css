@@ -1,3 +1,6 @@
+/* #9BB5BF or #3C6373 or #E1EDEB */
+
+
 /* ---------------Box Sizing----------------- */
 html {
   box-sizing: border-box;
@@ -19,4 +22,23 @@ html {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+/* ---- Global Syle ---- */
+body{
+  font-family: "Cantarell", sans-serif;
+  margin:0;
+}
+
+header.primary{
+  background-color:#9BB5BF;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 1px 1px #000000;
+
+  /* ---- Longform ---- */
+  padding-top:40px;
+  padding-right:40px;
+  padding-bottom:40px;
+  padding-left:40px;
 }
