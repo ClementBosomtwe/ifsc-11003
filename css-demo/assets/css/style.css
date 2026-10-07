@@ -118,8 +118,6 @@ header.primary nav ul li a:hover{
 
 
 
-
-
 /* ---- MEDIA QUERIES (High-level responsive design to adapt to any screen size and support all users—minimum or maximum: This helps the designer avoid building 4-5 different web browsers). ---- */
 /* ---- 3 TYPES: 1. Screen.   2. Print.    3. All. ---- */
 @media screen and (max-width:600px){
