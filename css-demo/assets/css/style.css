@@ -24,6 +24,14 @@ html {
   width: 1px;
 }
 
+/* ---- Global Style ---- */
+.container{
+  width:90vw;
+  max-width:992px; /* -- For Readability When Screen Is Either Zoomed In or Out -- */
+  margin:40px auto;
+}
+
+
 /* ---- Global Syle ---- */
 body{
   font-family: "Cantarell", sans-serif;
@@ -41,4 +49,86 @@ header.primary{
   padding-right:40px;
   padding-bottom:40px;
   padding-left:40px;
+
+  /* ---- Single Value ---- */
+  padding:40px;
+
+  /* ---- Top(T)/Right(R)/Bottom(B)/Left(L) ----*/
+  padding: 40px 40px 20px 40px;
+
+  /* ---- Top(T)/Bottom(B)/ | Left(L)/Right(R) ----*/
+  padding: 20px 40px;
+}
+
+header.primary a{
+  color:#fff;
+  text-decoration:none;
+}
+
+header.primary h1{
+  font-size:2.4rem;
+  margin:0;
+}
+
+header.primary p.subtitle{
+  font-size:1.3rem;
+  margin:10px 0 20px;
+  letter-spacing: -.2px;
+}
+
+header.primary nav{
+
+}
+
+header.primary nav ul{
+  padding:0;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  gap:30px;
+}
+
+header.primary nav ul li{
+  list-style-type:none;
+  margin-bottom:10px;
+  flex:1;
+}
+
+header.primary nav ul li a{
+  background-color: rgba(0,0,0,.5);
+  padding:5px 7.5px;
+  display:black;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  transition:.3s;
+}
+
+header.primary nav ul li a:hover{
+  background-color: rgba(0,0,0,.8);
+}
+
+#content h2{
+  color:#3b638b;
+  border-bottom:1px solid #100f0f;
+}
+
+#content p{
+  line-height:2.0;
+}
+
+
+
+
+
+/* ---- MEDIA QUERIES (High-level responsive design to adapt to any screen size and support all users—minimum or maximum: This helps the designer avoid building 4-5 different web browsers). ---- */
+/* ---- 3 TYPES: 1. Screen.   2. Print.    3. All. ---- */
+@media screen and (max-width:600px){
+  body {
+    background:red;
+
+header.primary nav ul{
+  flex-direction:column;
+  gap:15px;
+
+  }
 }
