@@ -24,11 +24,15 @@ html {
   width: 1px;
 }
 
-/* ---- Global Style ---- */
+/* ---- Utility Style ---- */
 .container{
   width:90vw;
   max-width:992px; /* -- For Readability When Screen Is Either Zoomed In or Out -- */
   margin:40px auto;
+}
+
+img{
+  max-width:100%; /* -- Default Selector to Control The Size and the Foof Print of The Image When The Screen is Zoomed In or Out -- */
 }
 
 
@@ -107,7 +111,7 @@ header.primary nav ul li a:hover{
   background-color: rgba(0,0,0,.8);
 }
 
-#content h2{
+#content h2, #blog h2{
   color:#3b638b;
   border-bottom:1px solid #100f0f;
 }
@@ -116,6 +120,59 @@ header.primary nav ul li a:hover{
   line-height:2.0;
 }
 
+#blog{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  flex-wrap:wrap; /* --- To make the RECENT Post lie on the top of the Block -- */
+  gap:20px;
+}
+
+#blog h2{
+  flex: 0 0 100%;
+}
+
+#blog article{
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  padding:10px;
+  font-size:.9rem;
+  flex:1;
+}
+
+figure{
+  margin:0;
+}
+
+#blog article time,
+#blog figcaption {
+  text-transform:uppercase;
+  font-size:.9rem;
+}
+
+#blog a{
+  color:#3b638b;
+}
+
+aside[aria-label="Sidebar"]{
+  background-color: #172635;
+  color:#fff;
+  padding: 40px 0;
+}
+
+aside div.container{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:40px;
+}
+
+aside .container a{
+  color:#fff;
+}
+
+article.widget footer{
+  display:none;
+}
 
 
 /* ---- MEDIA QUERIES (High-level responsive design to adapt to any screen size and support all users—minimum or maximum: This helps the designer avoid building 4-5 different web browsers). ---- */
@@ -128,5 +185,9 @@ header.primary nav ul{
   flex-direction:column;
   gap:15px;
 
+  }
+
+  #blog h2{
+    text-align:center;
   }
 }
