@@ -1,4 +1,4 @@
-/* #9BB5BF or #3C6373 or #E1EDEB */
+/* #578da2 or #3C6373 or #E1EDEB */
 
 
 /* ---------------Box Sizing----------------- */
@@ -35,6 +35,26 @@ img{
   max-width:100%; /* -- Default Selector to Control The Size and the Foof Print of The Image When The Screen is Zoomed In or Out -- */
 }
 
+.img-right{
+  float:right;
+  border:1px solid #cccccc;
+  padding:5px;
+  margin:10px 0 10px 20px;
+}
+
+.img-left{
+  float:left;
+  border:1px solid #cccccc;
+  padding:5px;
+  margin:10px 20px 10px 0;
+}
+
+.img_center{
+  display:block;
+  border:1px solid #cccccc;
+  padding:5px;
+  margin:20px auto;
+}
 
 /* ---- Global Syle ---- */
 body{
@@ -43,7 +63,7 @@ body{
 }
 
 header.primary{
-  background-color:#9BB5BF;
+  background-color:#578da2;
   color: #ffffff;
   text-align: center;
   text-shadow: 1px 1px #000000;
@@ -80,7 +100,7 @@ header.primary p.subtitle{
   letter-spacing: -.2px;
 }
 
-header.primary nav{
+header.primary nav.container{
 
 }
 
@@ -99,7 +119,7 @@ header.primary nav ul li{
 }
 
 header.primary nav ul li a{
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.4);
   padding:5px 7.5px;
   display:black;
   border-radius: 8px;
@@ -126,10 +146,15 @@ header.primary nav ul li a:hover{
   justify-content:space-between;
   flex-wrap:wrap; /* --- To make the RECENT Post lie on the top of the Block -- */
   gap:20px;
+  border-top:4px double #cccccc;
+  border-bottom:4px double #cccccc;
+  margin:20px 0;
+  padding:30px 0 40px 0;
 }
 
 #blog h2{
   flex: 0 0 100%;
+  margin:0;
 }
 
 #blog article{
@@ -153,8 +178,53 @@ figure{
   color:#3b638b;
 }
 
+#practice h2{
+  color:#3b638b;
+  border-bottom:1px solid #c0c0c0;
+}
+
+#practice a:link, #practice a:visited{
+  color: #3b638b;
+}
+
+#practice h3{
+  border-left:7px solid #3b638b;
+  padding:7.5px;
+}
+
+table{
+  width:100%;
+  border:1px solid #c0c0c0;
+  border-collapse:collapse;
+}
+
+table caption{}
+
+tr:nth-child(even){
+  background-color:rgba(0,0,0,0.1);
+}
+
+th{
+  background-color: #22374d;
+  color:#fff;
+  padding:7.5px;
+}
+
+td{
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+
+td:nth-child(n+2){
+  text-align:center;
+}
+
+tr:hover{
+  background-color:  rgba(0, 0, 0, 0.2);
+}
+
 aside[aria-label="Sidebar"]{
-  background-color: #172635;
+  background-color: #2e4b68;
   color:#fff;
   padding: 40px 0;
 }
@@ -172,6 +242,14 @@ aside .container a{
 
 article.widget footer{
   display:none;
+}
+
+footer.primary{
+  background-color: #578da2;
+  padding:1px;
+  text-align:center;
+  color: #fff;
+  text-shadow:1px 1px #000000;
 }
 
 
