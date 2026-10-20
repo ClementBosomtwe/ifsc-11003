@@ -63,6 +63,7 @@ body{
   background-image:url("../img/Preview.webp");
   background-repeat: no-repeat;
   background-size: contain;
+  background-size: cover;
 }
 
 header.primary{
