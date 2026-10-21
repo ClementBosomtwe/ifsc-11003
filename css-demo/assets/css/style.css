@@ -137,7 +137,7 @@ header.primary nav ul li a:hover{
 }
 
 #content h2, #blog h2{
-  color:#3b638b;
+  color:#1b4064;
   border-bottom:1px solid #100f0f;
 }
 
@@ -176,7 +176,7 @@ figure{
 #blog article time,
 #blog figcaption {
   text-transform:uppercase;
-  font-size:.9rem;
+  font-size:1.0rem;
 }
 
 #blog a{
@@ -185,7 +185,7 @@ figure{
 
 #practice h2{
   color:#3b638b;
-  border-bottom:1px solid #c0c0c0;
+  border-bottom:1px solid #ded9d9;
 }
 
 #practice a:link, #practice a:visited{
@@ -195,6 +195,7 @@ figure{
 #practice h3{
   border-left:7px solid #3b638b;
   padding:7.5px;
+  clear: both;
 }
 
 
@@ -238,7 +239,7 @@ figure{
   display:block;
   margin-top:10px;
   text-align:right;
-  font-size:.8rem;
+  font-size:.9rem;
 }
 
 table{
